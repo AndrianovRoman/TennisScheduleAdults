@@ -35,7 +35,7 @@
 
     table th, table td {
         padding: 5px;
-        max-width: unset;
+        width: unset;
     }
 
     .scheduleForAdults-title {
@@ -87,6 +87,14 @@
     .details-title {
         align-items: start;
         max-width: 600px;
+    }
+
+    .details-content-title {
+        justify-content: left;
+    }
+
+    .details-content-subtitle {
+        text-align: left;
     }
 }
 
