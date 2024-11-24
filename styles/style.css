@@ -1,0 +1,339 @@
+@import "fonts.css";
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+.scheduleForAdults-title {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+.scheduleForAdults-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #5F5F5F;
+}
+
+.scheduleForAdults-info-update-date {
+    font-size: 14px;
+}
+
+.scheduleForAdults-info-click {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.scheduleForAdults-info-click-text {
+    font-size: 14px;
+
+}
+
+.details {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 13px;
+    background: rgba(255,255,255,0.5);
+    transition: 0.3s;
+    overflow: hidden;
+    border: 1px solid #2D2D2D;
+    border-radius: 10px;
+}
+
+.details::after {
+    position: absolute;
+    right: 34px;
+    top: 34px;
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-right: 3px solid #2D2D2D;
+    border-bottom: 3px solid #2D2D2D;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: .3s;
+}
+
+.details[open]::after {
+    transform: rotate(225deg);
+}
+
+.details[open] {
+
+}
+
+.details[open] .details-title {
+    margin-bottom: 30px;
+}
+
+.details-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+    color: #2D2D2D;
+}
+
+.details-title-district {
+
+}
+
+.details-title-description {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.details-title-description a {
+    font-weight: 600;
+    color: #127912;
+    text-decoration: underline;
+}
+
+.details-title::-webkit-details-marker {
+    display: none;
+}
+
+.details-content {
+    padding: 0 20px 20px 20px;
+    font-size: 18px;
+    /*margin-bottom: -60px;*/
+}
+
+.details-content p:last-child {
+    margin-bottom: 0;
+}
+.details-content p:first-child {
+    margin-top: 0;
+}
+
+.details-content-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.details-content-title-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2D2D2D;
+}
+
+.details-content-subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2D2D2D;
+    margin-bottom: 40px;
+}
+
+.details-content-subtitle a {
+    color: #127912;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.details-content-info {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.details-content-info-flag {
+    height: 22px;
+}
+
+.details-content-info-text {
+    font-size: 14px;
+    color: #5F5F5F;
+}
+
+/*-----------------Стили для таблицы начало-----------------*/
+
+.details-content-table {
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+table {
+    border: 1px solid #D2D2D2;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+}
+
+table tr {
+    border: 1px solid #D2D2D2;
+    padding: 5px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #D2D2D2;
+    color: #2D2D2D;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+table th {
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+table th:nth-child(even),
+table td:nth-child(even){
+    background-color: #F8F8F8;
+}
+
+table td a {
+    color: #127912;
+    text-decoration: underline;
+}
+
+table td a:hover,
+table td a:active,
+table td a:focus{
+    color: #127912;
+    text-decoration: underline;
+}
+
+.details-content-table-cell-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-content-table-cell-column span {
+    color: #5F5F5F;
+}
+
+.details-content-table-cell-column a:hover,
+.details-content-table-cell-column a:active,
+.details-content-table-cell-column a:focus,
+.details-content-table-cell-column a {
+    color: #5F5F5F;
+}
+
+.details-content-table-cell-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+table td div span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*-----------------Стили для таблицы конец-----------------*/
+
+.details-content-description {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2D2D2D;
+    margin-bottom: 40px;
+    max-width: 850px;
+}
+
+.details-content-description-item {
+    margin-bottom: 8px;
+}
+
+.details-content-description-item:last-child {
+    margin-bottom: 0;
+    margin-top: 18px;
+}
+
+.details-content-description-item a {
+    text-decoration: underline;
+}
+
+.details-content-button {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #127912;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0;
+    width: 213px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color .2s ease-in-out;
+}
+
+.details-content-button:hover {
+    background-color: #37B44A;
+}
+
+/*-----------------Стили для информационного блока-----------------*/
+
+.details-content-title-info-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #127912;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.details-content-title-info-button-box {
+    display: none;
+    width: 500px;
+    height: auto;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #E6FBE6;
+    color: #000000;
+    border: 1px solid #E6FBE6;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+.details-content-title-info-button:hover .details-content-title-info-button-box {
+    display:block;
+    position:absolute;
+    z-index:2;
+    top: 25px;
+    left: 20px;
+}
+
+.details-content-title-info-button:hover {
+    background-color: #E6FBE6;
+    color: #2D2D2D;
+}
+
+.details-content-title-info-button-iks {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform .8s ease-in-out;
+}
+
+.details-content-title-info-button-iks:hover {
+    transform: rotateZ(360deg);
+}

@@ -1,0 +1,110 @@
+
+@media screen and (max-width: 1090px) {
+
+    .details-content-title-info-button-box {
+        width: 350px;
+    }
+
+    .scheduleForAdults-info {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .details::after {
+        width: 14px;
+        height: 14px;
+    }
+
+    .details-title {
+        font-size: 18px;
+    }
+
+    .details-title-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .details-content-title-info {
+        display: none;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+
+    .scheduleForAdults-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        font-size: 14px;
+        border-bottom: 1px solid #D2D2D2;
+        border-right: 1px solid transparent;
+    }
+
+    table td:first-child {
+        text-align: left;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: none;
+        font-weight: bold;
+    }
+
+    .details-title {
+        align-items: start;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .scheduleForAdults-title {
+        font-size: 24px;
+    }
+
+    .details-title {
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .details-title {
+        max-width: 250px;
+    }
+
+}
