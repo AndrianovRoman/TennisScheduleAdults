@@ -5,9 +5,153 @@ body {
     font-weight: 400;
 }
 
+/*program*/
+
+.program {
+    margin-bottom: 80px;
+}
+
+.program-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 60px;
+
+    /*margin-top: 70px;*/
+}
+
+.program-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+}
+
+.program-content-item {
+    border-radius: 20px;
+    padding: 40px;
+    width: 730px;
+
+    box-shadow: 0 0 24px 0 rgba(155, 155, 155, 0.25);
+    background: #fff;
+}
+
+.program-content-item-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.program-content-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.program-content-item-content-item {
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /*width: 650px;*/
+    /*height: 64px;*/
+}
+
+.program-content-item-content-item.bg-green {
+    background: #e6fbe6;
+}
+
+.program-content-item-content-item.bg-red {
+    background: #fbe8e6;
+}
+
+.program-content-item-content-item-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.program-content-item-content-item-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+/*corporations*/
+
+.corporations {
+    margin-bottom: 80px;
+    border-radius: 20px;
+    /*width: 1500px;*/
+    padding: 90px 40px;
+
+    background-image: url("../images/ball.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.corporations-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: 24px;
+
+    max-width: 405px;
+}
+
+.corporations-subtitle {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: 40px;
+
+    max-width: 678px;
+}
+
+.corporations-action-button {
+    display: block;
+    color: #FFFFFF;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    background-color: #127912;
+    border-radius: 10px;
+    padding: 18px;
+    width: 206px;
+    height: 70px;
+    text-align: center;
+    border: 0;
+    /*width: 213px;*/
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.corporations-action-button:hover {
+    background-color: #37B44A;
+}
+
+/*scheduleForAdults*/
+
+.scheduleForAdults {
+    margin-bottom: 80px;
+}
+
 .scheduleForAdults-title {
     font-weight: 600;
     font-size: 40px;
+    line-height: 140%;
     margin-bottom: 63px;
     text-align: center;
 }
@@ -16,7 +160,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #5F5F5F;
 }
 
@@ -33,6 +177,18 @@ body {
 .scheduleForAdults-info-click-text {
     font-size: 14px;
 
+}
+
+.scheduleForAdults-info-company {
+    margin-bottom: 10px;
+    color: #5F5F5F;
+    font-size: 14px;
+}
+
+.scheduleForAdults-info-company a {
+    color: #127912;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .details {
@@ -155,6 +311,12 @@ body {
     margin-bottom: 21px;
 }
 
+.details-content-info a {
+    color: #127912;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .details-content-info-flag {
     height: 22px;
 }
@@ -197,6 +359,10 @@ table th, table td {
     font-weight: 600;
     font-size: 16px;
     width: 160px;
+}
+
+table td:not(:first-child) {
+    font-weight: 500;
 }
 
 table th {
@@ -253,11 +419,53 @@ table td div span {
 
 /*-----------------Стили для таблицы конец-----------------*/
 
+/*----------------доп начало-----------------*/
+
+.details-content-description-details {
+
+    cursor: pointer;
+}
+
+
+
+.details-content-description-details[open] {
+
+}
+
+.details-content-description-summary {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #127912;
+}
+
+.details-content-description-summary:after {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/arrow.svg");
+    width: 20px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.details-content-description-details[open] .details-content-description-summary {
+    margin-bottom: 0.5em;
+}
+
+.details-content-description-details[open] .details-content-description-summary:after {
+    transform: rotate(180deg);
+}
+
+/*----------------доп конец-----------------*/
+
 .details-content-description {
     font-weight: 400;
     font-size: 15px;
     color: #2D2D2D;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
     max-width: 850px;
     line-height: 130%;
 }
@@ -276,6 +484,7 @@ table td div span {
 }
 
 .details-content-button {
+    display: block;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
@@ -286,7 +495,7 @@ table td div span {
     border: 0;
     width: 213px;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     transition: background-color .2s ease-in-out;
 }
 
@@ -336,11 +545,220 @@ table td div span {
 
 .details-content-title-info-button-iks {
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     transition: transform .8s ease-in-out;
 }
 
 .details-content-title-info-button-iks:hover {
     transform: rotateZ(360deg);
+}
+
+/*season-tickets*/
+
+.season-tickets {
+    margin-bottom: 80px;
+}
+
+.season-tickets-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 40px;
+}
+
+.season-tickets-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.season-tickets-content-item {
+    border-radius: 20px;
+    width: 360px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.season-tickets-content-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*certificates*/
+
+.certificates {
+    margin-bottom: 80px;
+}
+
+.certificates-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 40px;
+}
+
+.certificates-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificates-content-item {
+    border-radius: 20px;
+    width: 360px;
+}
+
+.certificates-content-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.certificates-content-item-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.certificates-content .slick-list {
+    max-width: 1500px;
+}
+
+
+.slick-dots {
+    bottom: -80px;
+}
+
+.certificates .slick-dots {
+    bottom: -60px;
+}
+
+.slick-dots li {
+    border: 1px solid #127912;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+ul:not([id*="bx_"]) > li:before{
+    content: '';
+}
+
+.certificates-content ul li:before,
+.season-tickets-content ul li:before {
+    background: transparent;
+}
+
+li.slick-active {
+    background: #127912;
+}
+
+.slick-dots li button:before {
+    content: "";
+}
+
+/*subscriptionsAndCertificates*/
+
+.subscriptionsAndCertificates {
+    margin-bottom: 80px;
+}
+
+.subscriptionsAndCertificates-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 40px;
+}
+
+.subscriptionsAndCertificates-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.subscriptionsAndCertificates-content-item {
+    padding: 40px;
+    width: 564px;
+    height: 432px;
+    border-radius: 20px;
+    background-color: rgba(254, 154, 12, 0.3);
+    background-image: url("../images/logo orange.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.subscriptionsAndCertificates-content-item-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-bottom: 15px;
+}
+
+.subscriptionsAndCertificates-content-item ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #2D2D2D;
+    position: relative;
+    padding-left: 35px;
+}
+
+.subscriptionsAndCertificates-content-item ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #FFF;
+    margin-right: 10px;
+}
+
+.subscriptions-block ul li::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #34A853;
+    margin-right: 10px;
+}
+
+.certificates-block ul li::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #FE9A0C;
+    margin-right: 10px;
+}
+
+.subscriptions-block {
+    background-color: rgba(82, 180, 97, 0.3);
+    background-image: url("../images/logo green.png");
+}
+
+.certificates-block {
+    background-color: rgba(254, 154, 12, 0.3);
+    background-image: url("../images/logo orange.png");
 }

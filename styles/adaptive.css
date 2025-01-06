@@ -1,4 +1,24 @@
 
+@media screen and (max-width: 1200px) {
+    .program-content {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .subscriptionsAndCertificates-content-item {
+        width: 464px;
+    }
+    .subscriptionsAndCertificates-content-item-title {
+        font-size: 20px;
+    }
+    .subscriptionsAndCertificates-content-item ul li {
+        font-size: 16px;
+    }
+}
+
+
 @media screen and (max-width: 1090px) {
 
     .details-content-title-info-button-box {
@@ -25,20 +45,40 @@
     .details-title-description {
         font-size: 14px;
     }
+
+    .season-tickets-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 990px){
+    .subscriptionsAndCertificates-content {
+        flex-direction: column;
+    }
+    .subscriptionsAndCertificates-content-item {
+        width: unset;
+        max-width: 600px;
+    }
 }
 
 @media screen and (max-width: 860px) {
 
-    .details-content-title-info {
-        display: none;
-    }
+    /*.details-content-title-info {*/
+    /*    display: none;*/
+    /*}*/
 
     table th, table td {
         padding: 5px;
         width: unset;
     }
 
-    .scheduleForAdults-title {
+    .scheduleForAdults-title,
+    .program-title,
+    .corporations-title,
+    .season-tickets-title,
+    .certificates-title,
+    .subscriptionsAndCertificates-title {
         font-size: 30px;
     }
 }
@@ -46,17 +86,36 @@
 @media screen and (max-width: 800px) {
     table {
         border: 0;
+        width: unset;
     }
 
     table thead {
         display: none;
     }
 
+    .details-content-table tbody {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    /*table tbody {*/
+    /*    display: flex;*/
+    /*    align-items: start;*/
+    /*    justify-content: center;*/
+    /*    gap: 20px;*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
+
     table tr {
-        margin-bottom: 25px;
         display: flex;
         flex-direction: column;
         padding: 0;
+
+        width: 250px;
+        /*height: 599px;*/
     }
 
     table td {
@@ -87,6 +146,7 @@
     .details-title {
         align-items: start;
         max-width: 600px;
+        padding-right: 50px;
     }
 
     .details-content-title {
@@ -96,7 +156,68 @@
     .details-content-subtitle {
         text-align: left;
     }
+
+    .details-content-table .details-content-title-info-button-box {
+        width: 200px;
+    }
+
+    .details-content-table .details-content-title-info-button:hover .details-content-title-info-button-box {
+        left: -200px;
+    }
+
+    .details-content-table-cell-column {
+        flex-direction: unset;
+        column-gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: 180px;
+    }
+
+    .program-content-item {
+        width: unset;
+    }
+
 }
+
+@media screen and (max-width: 650px){
+    .subscriptionsAndCertificates-content-item {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 606px) {
+    table tr {
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .program,
+    .corporations,
+    .scheduleForAdults,
+    .certificates,
+    .subscriptionsAndCertificates {
+        margin-bottom: 40px;
+    }
+
+    .season-tickets {
+
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 10px;
+    }
+
+    .season-tickets-content .slick-dots {
+        bottom: -60px;
+    }
+
+}
+
 
 @media screen and (max-width: 570px) {
 
@@ -109,24 +230,139 @@
         height: 30px;
     }
 
+    .details-content-title .details-content-title-info-button-box {
+        width: 300px;
+    }
+
+    .details-content-title .details-content-title-info-button:hover .details-content-title-info-button-box {
+        left: -50px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
 
-    .scheduleForAdults-title {
+    .scheduleForAdults-title,
+    .program-title,
+    .corporations-title,
+    .season-tickets-title,
+    .certificates-title,
+    .subscriptionsAndCertificates-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .program-content {
+        gap: 20px;
+    }
+
+    .program-content-item {
+        padding: 20px;
+    }
+
+    .program-content-item-content-item {
+        padding-right: 10px;
+    }
+
+    .program-content-item-title {
         font-size: 24px;
     }
 
-    .details-title {
-        max-width: 300px;
+    .program-content-item-content-item-svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .program-content-item-content-item-svg svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .program-content-item-content-item-text {
+        font-size: 16px;
+    }
+
+    .corporations {
+        padding: 40px;
+    }
+
+    .corporations-subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .season-tickets-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .certificates-content-item-title {
+        font-size: 16px;
+    }
+
+    .certificates-content-item img {
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+
+    .subscriptionsAndCertificates-content-item {
+        padding: 20px;
+    }
+
+    .subscriptionsAndCertificates-content-item ul li {
+        padding-left: 25px;
+    }
+
+
+    .subscriptionsAndCertificates-content-item ul li::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .subscriptions-block ul li::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    .certificates-block ul li::after {
+        width: 10px;
+        height: 10px;
     }
 
 }
 
+
+@media screen and (max-width: 420px) {
+    .details-content-title .details-content-title-info-button-box {
+        width: 250px;
+    }
+
+    .details-content-title .details-content-title-info-button:hover .details-content-title-info-button-box {
+        left: -100px;
+    }
+
+    .program-content-item-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .corporations {
+        padding: 20px;
+    }
+
+}
+
+
 @media screen and (max-width: 375px) {
 
-    .details-title {
-        max-width: 250px;
+    .details-content {
+        padding: 0 10px 20px 10px;
     }
 
 }
