@@ -179,18 +179,6 @@ body {
 
 }
 
-.scheduleForAdults-info-company {
-    margin-bottom: 10px;
-    color: #5F5F5F;
-    font-size: 14px;
-}
-
-.scheduleForAdults-info-company a {
-    color: #127912;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
 .details {
     position: relative;
     display: block;
@@ -203,7 +191,7 @@ body {
     border-radius: 10px;
 }
 
-.details::after {
+.details-title::after {
     position: absolute;
     right: 34px;
     top: 34px;
@@ -218,7 +206,7 @@ body {
     transition: .3s;
 }
 
-.details[open]::after {
+.details[open] .details-title::after {
     transform: rotate(225deg);
 }
 
@@ -554,6 +542,14 @@ table td div span {
     transform: rotateZ(360deg);
 }
 
+.openBox {
+    display:block;
+    position:absolute;
+    z-index:2;
+    top: 25px;
+    left: 20px;
+}
+
 /*season-tickets*/
 
 .season-tickets {
@@ -762,3 +758,23 @@ li.slick-active {
     background-color: rgba(254, 154, 12, 0.3);
     background-image: url("../images/logo orange.png");
 }
+
+/*close-all-details*/
+
+/*#close-all-details {*/
+/*    position: fixed;*/
+/*    bottom: 30px;*/
+/*    right: 30px;*/
+/*    background: #127912;*/
+/*    color: #FFFFFF;*/
+/*    font-size: 20px;*/
+/*    padding: 20px;*/
+/*    z-index: 2;*/
+/*    text-align: center;*/
+/*    cursor: pointer;*/
+/*    transition: background .2s ease-in-out;*/
+/*}*/
+
+/*#close-all-details:hover {*/
+/*    background: #37B44A;*/
+/*}*/

@@ -1,4 +1,5 @@
 
+// ------------------------ Карусель для Абонементов ------------------------
 
 $('.season-tickets-content').not('.slick-initialized').slick({
     slidesToShow: 4,
@@ -34,6 +35,8 @@ $('.season-tickets-content').not('.slick-initialized').slick({
     ]
 });
 
+// ------------------------ Карусель для Сертификатов ------------------------
+
 $('.certificates-content').not('.slick-initialized').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -64,3 +67,38 @@ $('.certificates-content').not('.slick-initialized').slick({
         },
     ]
 });
+
+// ------------------------ Закрытие всех details ------------------------
+
+// const closeAllDetails = document.getElementById('close-all-details');
+//
+// closeAllDetails.onclick = () => {
+//     let allDetails = document.querySelectorAll('.details');
+//     allDetails.forEach((item) => {
+//         item.removeAttribute('open');
+//     })
+// }
+
+
+// ------------------------ Открытие информационных блоков на кнопку i ------------------------
+
+// let selectedBox;
+// document.onclick = function (e) {
+//     let target = e.target;
+//     if (target.className === 'details-content-title-info-button-iks'
+//         || target.className === 'details-content-title-info-button') {
+//         openBox(target);
+//     }
+// }
+//
+// function openBox(target) {
+//     // if (selectedBox) {
+//     //     selectedBox.classList.toggle('openBox');
+//     // }
+//     if (target.className === 'details-content-title-info-button-iks') {
+//         selectedBox = target.nextElementSibling;
+//     } else if (target.className === 'details-content-title-info-button') {
+//         selectedBox = target.lastElementChild;
+//     }
+//     selectedBox.classList.toggle('openBox');
+// }
