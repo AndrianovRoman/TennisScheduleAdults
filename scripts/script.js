@@ -5,13 +5,14 @@ $('.season-tickets-content').not('.slick-initialized').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
-    infinite: false,
+    infinite: true,
     arrows: false,
     responsive: [
         {
             breakpoint: 1025,
             settings: {
-                dots: true,
+                dots: false,
+                arrows: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
@@ -40,9 +41,9 @@ $('.season-tickets-content').not('.slick-initialized').slick({
 $('.certificates-content').not('.slick-initialized').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    dots: true,
-    infinite: false,
-    arrows: false,
+    dots: false,
+    infinite: true,
+    arrows: true,
     responsive: [
         {
             breakpoint: 1025,
@@ -54,6 +55,8 @@ $('.certificates-content').not('.slick-initialized').slick({
         {
             breakpoint: 801,
             settings: {
+                dots: true,
+                arrows: false,
                 slidesToShow: 2,
                 slidesToScroll: 1,
             }
@@ -61,6 +64,8 @@ $('.certificates-content').not('.slick-initialized').slick({
         {
             breakpoint: 401,
             settings: {
+                dots: true,
+                arrows: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }

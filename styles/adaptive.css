@@ -128,6 +128,13 @@
         border-right: 1px solid transparent;
     }
 
+    /*новое для таблицы начало*/
+    table td:last-child {
+        display: unset;
+        text-align: center;
+    }
+    /*новое для таблицы конец*/
+
     table td:first-child {
         text-align: left;
     }
@@ -310,11 +317,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
-
-    .certificates-content-item-title {
-        font-size: 16px;
-    }
-
     .certificates-content-item img {
         margin-bottom: 0;
     }

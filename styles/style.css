@@ -1,9 +1,44 @@
 @import "fonts.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
 }
+
+/*hyperlink-menu*/
+
+.hyperlink-menu {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: left;
+}
+
+.hyperlink-menu a {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #127912;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+    transition: background-color .2s ease-in-out;
+}
+
+.hyperlink-menu a:hover {
+    background-color: #37B44A;
+}
+
 
 /*program*/
 
@@ -21,6 +56,12 @@ body {
     margin-bottom: 60px;
 
     /*margin-top: 70px;*/
+}
+
+.program-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .program-content {
@@ -346,7 +387,7 @@ table th, table td {
     color: #2D2D2D;
     font-weight: 600;
     font-size: 16px;
-    width: 160px;
+    /*width: 160px;*/
 }
 
 table td:not(:first-child) {
@@ -566,10 +607,10 @@ table td div span {
 }
 
 .season-tickets-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*gap: 20px;*/
 }
 
 .season-tickets-content-item {
@@ -610,6 +651,8 @@ table td div span {
 .certificates-content-item {
     border-radius: 20px;
     width: 360px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .certificates-content-item img {
@@ -617,14 +660,6 @@ table td div span {
     height: 100%;
     border-radius: 20px;
     margin-bottom: 20px;
-}
-
-.certificates-content-item-title {
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    color: #000;
 }
 
 .certificates-content .slick-list {
@@ -677,6 +712,12 @@ li.slick-active {
     text-align: center;
     color: #1b1b1b;
     margin-bottom: 40px;
+}
+
+.subscriptionsAndCertificates-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .subscriptionsAndCertificates-content {
@@ -778,3 +819,46 @@ li.slick-active {
 /*#close-all-details:hover {*/
 /*    background: #37B44A;*/
 /*}*/
+
+
+/*slick js*/
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 100%;
+    /* left: 50%; */
+    margin-top: 30px;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: #127912;
+    border-radius: 20px;
+    padding: 0;
+    z-index: 3;
+}
+
+.slick-prev {
+    left: calc(50% - 76px);
+}
+
+.slick-next {
+    right: calc(50% - 76px);
+}
+
+.slick-prev:before {
+    content: url('../images/prev-hover.png');
+}
+
+.slick-next:before {
+    content: url('../images/next-hover.png');
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background-color: #127912;
+}
+
+.season-tickets-content .slick-prev, .season-tickets-content .slick-next {
+    margin-top: 53px;
+}
